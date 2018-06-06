@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '»¶Ó­Ê¹ÓÃbootstrap£¡'
+      msg: 'æ¬¢è¿Žä½¿ç”¨vue+Element-UI'
     }
   }
 }
