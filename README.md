@@ -1,6 +1,6 @@
-# zhgd
+# zhgdpc
 
-> 智慧工地
+> A Vue.js project
 
 ## Build Setup
 
