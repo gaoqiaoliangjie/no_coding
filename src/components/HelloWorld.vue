@@ -61,7 +61,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      msg: 'Welcome to vue+Element-UI'
+      msg: 'Fucking World !!!'
     }
   }
 }
