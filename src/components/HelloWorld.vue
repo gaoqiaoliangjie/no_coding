@@ -66,16 +66,6 @@ export default {
       msg: 'Fucking World !!!'
     }
   },
-  methods: {
-   showDetails: function () {
-     this.$http.get('shfawo.cn:8000/appDictionary/getBorrowUnit').then(function (res) {
-       console.log(res) // 返回很多的数据,比如执行状态,url,data等等
-       console.log(res.data)// 返回的json数据
-       console.log(res.data.message)// json对象里面的信息
-       this.msg = res.data
-     })
-   }
- }
 }
 </script>
 
