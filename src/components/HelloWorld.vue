@@ -2,6 +2,7 @@
 <div class="hello">
   <h1>{{ msg }}</h1>
   <h2>Essential Links</h2>
+  <el-button v-on:click="showDetails">Button</el-button>
   <ul>
     <li>
       <a href="https://vuejs.org" target="_blank">
@@ -57,13 +58,24 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
   data() {
     return {
       msg: 'Fucking World !!!'
     }
-  }
+  },
+  methods: {
+   showDetails: function () {
+     this.$http.get('shfawo.cn:8000/appDictionary/getBorrowUnit').then(function (res) {
+       console.log(res) // 返回很多的数据,比如执行状态,url,data等等
+       console.log(res.data)// 返回的json数据
+       console.log(res.data.message)// json对象里面的信息
+       this.msg = res.data
+     })
+   }
+ }
 }
 </script>
 
