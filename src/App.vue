@@ -1,29 +1,29 @@
 <template>
-  <div id="app">
-    <!-- 外层容器 -->
-    <el-container>
-      <!-- 顶栏容器 -->
-      <el-header>
+<div id="app">
+  <!-- 外层容器 -->
+  <el-container>
+    <!-- 顶栏容器 -->
+    <el-header>
 
-      </el-header>
-      <!-- 顶栏容器end -->
-      <!-- 侧边栏容器 -->
-      <el-aside>
-        
-      </el-aside>
-      <!-- 侧边栏容器end -->
-      <!-- 主要区域容器 -->
-      <el-main>
-        <router-view/>
-      </el-main>
-      <!-- 主要区域容器eng -->
-      <!-- 底栏容器 -->
-      <el-footer>
-      </el-footer>
-      <!-- 底栏容器eng -->
-    </el-container>
+    </el-header>
+    <!-- 顶栏容器end -->
+    <!-- 侧边栏容器 -->
+    <el-aside>
 
-  </div>
+    </el-aside>
+    <!-- 侧边栏容器end -->
+    <!-- 主要区域容器 -->
+    <el-main>
+      <router-view/>
+    </el-main>
+    <!-- 主要区域容器eng -->
+    <!-- 底栏容器 -->
+    <el-footer>
+    </el-footer>
+    <!-- 底栏容器eng -->
+  </el-container>
+  <!-- 外层容器end -->
+</div>
 </template>
 
 <script>
