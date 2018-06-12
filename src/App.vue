@@ -72,7 +72,6 @@ html {
 }
 .el-scrollbar__view{
   overflow-x: visible;
-
 }
 .el-scrollbar__wrap{
   overflow-x: visible;
