@@ -11,7 +11,7 @@
   </div>
   <div class="form-group">
     <label>Sex:</label>
-    <el-select v-model="newPerson.sex" placeholder="请选择"  >
+    <el-select v-model="newPerson.sex" placeholder="请选择">
       <el-option v-for="item in sexArray" :key="item.value" :label="item.label" :value="item.value">
       </el-option>
     </el-select>
@@ -60,13 +60,13 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      sexArray:[{
-          value: '男',
-          label: '男'
-        },{
-            value: '女',
-            label: '女'
-          }],
+      sexArray: [{
+        value: '男',
+        label: '男'
+      }, {
+        value: '女',
+        label: '女'
+      }],
       newPerson: {
         name: '',
         age: 0,

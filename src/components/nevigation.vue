@@ -1,7 +1,6 @@
 <template lang="html">
   <el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
     <el-button class="CollapseBtn" v-bind:class="isCollapse ? errorClass: activeClass " v-on:click="change(isCollapse)" v-model="isCollapse" circle></el-button>
-    <el-scrollbar class="scroll">
     <el-submenu index="1">
      <template slot="title">
        <i class="el-icon-phone"></i>
@@ -24,7 +23,99 @@
        <i class="el-icon-menu"></i>
        <span slot="title">导航二</span>
      </el-menu-item>
-    </el-scrollbar>
+     <el-menu-item index="2">
+        <i class="el-icon-menu"></i>
+        <span slot="title">导航二</span>
+      </el-menu-item>
+      <el-menu-item index="2">
+         <i class="el-icon-menu"></i>
+         <span slot="title">导航二</span>
+       </el-menu-item>
+       <el-menu-item index="2">
+          <i class="el-icon-menu"></i>
+          <span slot="title">导航二</span>
+        </el-menu-item>
+        <el-menu-item index="2">
+           <i class="el-icon-menu"></i>
+           <span slot="title">导航二</span>
+         </el-menu-item>
+         <el-menu-item index="2">
+            <i class="el-icon-menu"></i>
+            <span slot="title">导航二</span>
+          </el-menu-item>
+          <el-menu-item index="2">
+             <i class="el-icon-menu"></i>
+             <span slot="title">导航二</span>
+           </el-menu-item>
+           <el-menu-item index="2">
+              <i class="el-icon-menu"></i>
+              <span slot="title">导航二</span>
+            </el-menu-item>
+            <el-menu-item index="2">
+               <i class="el-icon-menu"></i>
+               <span slot="title">导航二</span>
+             </el-menu-item>
+
+             <el-menu-item index="2">
+                <i class="el-icon-menu"></i>
+                <span slot="title">导航二</span>
+              </el-menu-item>
+
+              <el-menu-item index="2">
+                 <i class="el-icon-menu"></i>
+                 <span slot="title">导航二</span>
+               </el-menu-item>
+
+               <el-menu-item index="2">
+                  <i class="el-icon-menu"></i>
+                  <span slot="title">导航二</span>
+                </el-menu-item>
+
+                <el-menu-item index="2">
+                   <i class="el-icon-menu"></i>
+                   <span slot="title">导航二</span>
+                 </el-menu-item>
+
+                 <el-menu-item index="2">
+                    <i class="el-icon-menu"></i>
+                    <span slot="title">导航二</span>
+                  </el-menu-item>
+
+                  <el-menu-item index="2">
+                     <i class="el-icon-menu"></i>
+                     <span slot="title">导航二</span>
+                   </el-menu-item>
+
+                   <el-menu-item index="2">
+                      <i class="el-icon-menu"></i>
+                      <span slot="title">导航二</span>
+                    </el-menu-item>
+
+                    <el-menu-item index="2">
+                       <i class="el-icon-menu"></i>
+                       <span slot="title">导航二</span>
+                     </el-menu-item>
+
+                     <el-menu-item index="2">
+                        <i class="el-icon-menu"></i>
+                        <span slot="title">导航二</span>
+                      </el-menu-item>
+
+                      <el-menu-item index="2">
+                         <i class="el-icon-menu"></i>
+                         <span slot="title">导航二</span>
+                       </el-menu-item>
+
+                       <el-menu-item index="2">
+                          <i class="el-icon-menu"></i>
+                          <span slot="title">导航二</span>
+                        </el-menu-item>
+
+                        <el-menu-item index="2">
+                           <i class="el-icon-menu"></i>
+                           <span slot="title">导航二</span>
+                         </el-menu-item>
+
 
   </el-menu>
 </template>
