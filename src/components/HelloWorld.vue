@@ -93,7 +93,7 @@ export default {
   methods: {
     createPerson: function() {
       this.people.push(this.newPerson);
-      // 添加完newPerson对象后，重置newPerson对象
+      // 添加完newPerson对象后，重置newPerson对象as
       this.newPerson = {
         name: '',
         age: 0,
