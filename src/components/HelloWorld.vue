@@ -1,71 +1,110 @@
 <template>
 <div class="hello">
-  <h1>{{ msg }}</h1>
-  <h2>Essential Links</h2>
-  <el-button v-on:click="showDetails">Button</el-button>
-  <ul>
-    <li>
-      <a href="https://vuejs.org" target="_blank">
-          Core Docs
-        </a>
-    </li>
-    <li>
-      <a href="https://forum.vuejs.org" target="_blank">
-          Forum
-        </a>
-    </li>
-    <li>
-      <a href="https://chat.vuejs.org" target="_blank">
-          Community Chat
-        </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/vuejs" target="_blank">
-          Twitter
-        </a>
-    </li>
-    <br>
-    <li>
-      <a href="http://vuejs-templates.github.io/webpack/" target="_blank">
-          Docs for This Template
-        </a>
-    </li>
-  </ul>
-  <h2>Ecosystem</h2>
-  <ul>
-    <li>
-      <a href="http://router.vuejs.org/" target="_blank">
-          vue-router
-        </a>
-    </li>
-    <li>
-      <a href="http://vuex.vuejs.org/" target="_blank">
-          vuex
-        </a>
-    </li>
-    <li>
-      <a href="http://vue-loader.vuejs.org/" target="_blank">
-          vue-loader
-        </a>
-    </li>
-    <li>
-      <a href="https://github.com/vuejs/awesome-vue" target="_blank">
-          awesome-vue
-        </a>
-    </li>
-  </ul>
+  <legend>Create New Person</legend>
+  <div class="form-group">
+    <label>Name:</label>
+    <input type="text" v-model="newPerson.name" />
+  </div>
+  <div class="form-group">
+    <label>Age:</label>
+    <input type="text" v-model="newPerson.age" />
+  </div>
+  <div class="form-group">
+    <label>Sex:</label>
+    <el-select v-model="newPerson.sex" placeholder="请选择"  >
+      <el-option v-for="item in sexArray" :key="item.value" :label="item.label" :value="item.value">
+      </el-option>
+    </el-select>
+  </div>
+  <div class="form-group">
+    <label></label>
+    <el-button type="primary" icon="el-icon-plus" @click="createPerson"></el-button>
+  </div>
+  <table align="center" border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(person, index) in people" :key="index">
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+        <td>{{ person.sex }}</td>
+        <td :class="'text-center'">
+          <el-button type="danger" icon="el-icon-delete" @click="deletePerson(index)"></el-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <el-table :data="people" style="width: 100% ;text-align:center; margin:auto;">
+    <el-table-column prop="name" label="名称" width="120">
+    </el-table-column>
+    <el-table-column prop="age" label="年龄" width="140">
+    </el-table-column>
+    <el-table-column prop="sex" label="性别" width="80">
+    </el-table-column>
+    <!-- <el-table-column
+          prop=""
+          label="操作">
+      </el-table-column> -->
+  </el-table>
 </div>
 </template>
 
 <script>
-
 export default {
   name: 'HelloWorld',
   data() {
     return {
-      msg: 'Fucking World !!!'
+      sexArray:[{
+          value: '男',
+          label: '男'
+        },{
+            value: '女',
+            label: '女'
+          }],
+      newPerson: {
+        name: '',
+        age: 0,
+        sex: '男'
+      },
+      people: [{
+          name: 'Jack',
+          age: 30,
+          sex: '男'
+        },
+        {
+          name: 'Bill',
+          age: 26,
+          sex: '男'
+        },
+        {
+          name: 'Chris',
+          age: 36,
+          sex: '男'
+        }
+      ]
     }
   },
+  methods: {
+    createPerson: function() {
+      this.people.push(this.newPerson);
+      // 添加完newPerson对象后，重置newPerson对象
+      this.newPerson = {
+        name: '',
+        age: 0,
+        sex: 'Male'
+      }
+    },
+    deletePerson: function(index) {
+      // 删一个数组元素
+      this.people.splice(index, 1);
+    }
+  }
 }
 </script>
 

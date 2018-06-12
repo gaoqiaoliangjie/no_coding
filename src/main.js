@@ -8,6 +8,8 @@ import ElementUI from 'element-ui';
 import './assets/theme/element/index.css'
 Vue.use(ElementUI,{ size: 'small', zIndex: 3000 });
 /* eslint-disable no-new */
+import Nevigation from '/components/navigation'
+
 new Vue({
   el: '#app',
   router,
