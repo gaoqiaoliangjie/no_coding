@@ -7,7 +7,7 @@
 
     </el-header>
     <!-- 顶栏容器end -->
-    <el-container style="height:80%;">
+    <el-container style="height:100%;">
       <el-scrollbar class="scroll" style="height:100%;">
         <!-- 侧边栏容器 -->
         <el-aside width="auto" class="leftBox">
