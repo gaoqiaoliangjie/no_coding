@@ -10,7 +10,7 @@
        <i class="el-icon-refresh"></i>
       <span slot="title">施工安全</span>
      </template>
-      <el-menu-item index="2-1" router="/safe">安全隐患</el-menu-item>
+      <el-menu-item index="/Top" router="/safe">安全隐患</el-menu-item>
       <el-menu-item index="2-2">安全会议</el-menu-item>
       <el-menu-item index="2-3">安全预案</el-menu-item>
     </el-submenu>

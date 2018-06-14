@@ -4,7 +4,7 @@
   <el-container style="height:100%;">
     <!-- 顶栏容器 -->
     <el-header>
-
+        <!-- <Top></Top> -->
     </el-header>
     <!-- 顶栏容器end -->
     <el-container style="height:100%;">
@@ -34,11 +34,14 @@
 
 <script>
 import Nevigation from './components/nevigation.vue';
+import Top from './components/Top.vue';
+
 $(".leftBox").css("height", $(window).height())
 export default {
   name: 'App',
   components: {
-    Nevigation
+    Nevigation,
+    Top
   }
 }
 </script>
