@@ -7,7 +7,7 @@
       name:'Top',
     data() {
     return {
-      input:"hello meinv"
+      input:"hello 美女"
     }
   },
     methods: {
