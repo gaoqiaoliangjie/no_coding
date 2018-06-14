@@ -4,7 +4,7 @@
   <el-container style="height:100%;">
     <!-- 顶栏容器 -->
     <el-header>
-        <!-- <Top></Top> -->
+        <Top></Top>
     </el-header>
     <!-- 顶栏容器end -->
     <el-container style="height:100%;">

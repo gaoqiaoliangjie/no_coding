@@ -1,19 +1,14 @@
 <template>
-<el-slider v-model="value1"></el-slider>
+<el-input v-model="input" placeholder="请输入内容"></el-input>
 </template>
-
 <script>
   export default {
       name:'Top',
     data() {
-      return {
-        value1: 0,
-        value2: 50,
-        value3: 36,
-        value4: 48,
-        value5: 42
-      }
-    },
+    return {
+      input: 'hahaha'
+    }
+  },
     methods: {
       formatTooltip(val) {
         return val / 100;
